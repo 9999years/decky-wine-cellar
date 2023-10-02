@@ -846,6 +846,12 @@ dependencies = [
 ]
 
 [[package]]
+name = "rustls-pki-types"
+version = "0.2.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "a47003264dea418db67060fa420ad16d0d2f8f0a0360d825c00e177ac52cb5d8"
+
+[[package]]
 name = "rustls-webpki"
 version = "0.100.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -862,6 +868,17 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "7d93931baf2d282fff8d3a532bbfd7653f734643161b87e3e01e59a04439bf0d"
 dependencies = [
  "ring",
+ "untrusted",
+]
+
+[[package]]
+name = "rustls-webpki"
+version = "0.102.0-alpha.3"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "77fecb40b15f8d5d22e08f89e0a0bfa2c17ddd5fc385700f96920bba2b99b680"
+dependencies = [
+ "ring",
+ "rustls-pki-types",
  "untrusted",
 ]
 
@@ -1507,7 +1524,7 @@ dependencies = [
  "keyvalues-parser",
  "log",
  "reqwest",
- "rustls-webpki 0.101.4",
+ "rustls-webpki 0.102.0-alpha.3",
  "serde",
  "serde_json",
  "tar",

@@ -25,7 +25,7 @@ flate2 = "1.0.27"
 xz2 = "0.1.7"
 
 # External security related
-rustls-webpki = "0.101.4"
+rustls-webpki = "0.102.0-alpha.0"
 time = "0.3.25"
 
 [dev-dependencies]
